@@ -1,0 +1,19 @@
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.description_result {
+    font-family: 'Roboto', sans-serif;
+}

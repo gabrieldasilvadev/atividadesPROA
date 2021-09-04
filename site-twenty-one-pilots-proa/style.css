@@ -1,0 +1,392 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #FBFBFD;
+    box-sizing: border-box;
+}
+ol, ul, li {
+    list-style: none;
+    z-index: 2;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET */
+
+
+/* Header/NavBar */
+.nav-bar {
+    width: 100%;
+    max-width: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Animacao */
+    background: linear-gradient(-100deg, #8CB92B, #E12727, #F1DB23, #85C5D5);
+	background-size: 800% 800%;
+	animation: gradient 10s ease infinite;
+}
+
+header nav {
+    display: flex;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li:first {margin-left: 0;}
+header li:last-child {margin-right: 60px;}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a  {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #201b1b;
+    letter-spacing: 5px;
+}
+
+.itens a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #0F0F0F;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+/* Header/NavBar */
+
+
+/* Initial page */
+.container-initial {
+    animation: fadeIn 3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.image-initial {
+    display: inline-block;
+    justify-content: space-around;
+    width: 63%;
+    margin-top: 150px;
+}
+
+.title-initial {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    justify-content: space-around;
+    font-size: 100px;
+    transform: translateY(50%);
+    z-index: 10;
+    letter-spacing: 0.5px;
+}
+/* Initial page */
+
+/* About */
+#about {
+    height: 800px;
+    margin-top: 5px;
+    background-color: #000000;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+.about-title {
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+    color: red;
+}
+
+.img-about {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    border-radius: 50%;
+    padding-left: 40px;
+    z-index: 2;
+}
+
+
+ .summary {
+    color: #F5F5F7;
+    width: 620px;
+    height: 620px;
+    font-size: 36px;
+    letter-spacing: .5;
+    overflow-wrap: break-word;
+    position: relative;
+    left: 600px;
+    bottom: 460px;
+    line-height: 45px;
+}
+
+#particles-js {
+    position: relative;
+    bottom: 600px;
+    right: 600px;
+    left: -600px;
+    width: 1349px;
+    height: 750px;
+}
+/* About */
+
+/* Members */
+#members {
+    height: 700px;
+    margin-top: 5px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #a75158, #a7cac3);
+    animation: colorChange 12s ease infinite;
+    background-size: 400% 400%;
+    animation: colorChange 5s infinite;
+}
+
+.members-title {
+    padding: 20px;
+}
+
+
+.img-m {
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.container-img-m > div {
+    display: flex;
+    max-width: 100%;
+    margin: 10%;
+}
+
+.container-img-m {
+    position: relative;
+    bottom: 15%;
+}
+
+
+.tyler  {
+    position: relative;
+    float: left;
+    font-size: 24px;
+    margin-right: 10%;
+}
+
+
+.josh {
+    position: relative;
+    float: right;
+    font-size: 24px;
+    margin-left: 10%;
+}
+/* Members */
+
+
+/* Albuns */
+.container-albuns {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 300px;
+    width: 50%;
+    float: right;
+    padding: 50px;
+    grid-gap: 50px;
+}
+
+.item-albun {
+    position: relative;
+}
+
+.item-albun .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.4);
+}
+
+.item-albun .title-albuns {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0 10px 10px ;
+    font-size: 16pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-typing {
+    background: #8CB92B;
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 500px;
+    right: 400px;
+}
+
+  /* Tamanho dos albuns */
+
+  .wxh {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+
+
+
+
+
+/* Utilities */
+.hr-sub {
+    width: 200px;
+    box-shadow: 0 0 0.5px #201b1b;
+}
+
+.line-mbr {
+    width: 2px;
+    color: black;
+    height: 400px;
+    background-color: #000000;
+    position: relative;
+    left: 50%;
+    margin-right: 10px;
+}
+
+
+b {
+    font-weight: bold;
+}
+/* Utilities */
+
+
+/* pseudoclasses for CSS */
+.itens a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+.itens li :hover::after {
+    width: 100%;
+}
+
+li.active,li a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.subtitle:hover {
+    color: #FBFBFD;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.img-about:hover {
+    opacity: 0.6;
+}
+/* pseudoclasses for CSS */
+
+
+/* Keyframes for animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Keyframes for animation */

@@ -1,0 +1,37 @@
+.btn-cookies:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.btn-cookies:not(hover) {
+    transition: 0.2s;
+}
+
+.card:not(hover) {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.01); 
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card img:hover {
+    opacity: 75%;
+}
+
+.decoration {
+    color: #333;
+    text-decoration: none;
+}
+
+.decoration:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.card h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

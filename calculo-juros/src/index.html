@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+    <!-- bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="_css/main.css">
+    <link rel="stylesheet" href="_css/tailwind.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>Calculo de Juros</title>
+
+</head>
+
+<body class="bg-gray-50">
+    <header class="">
+        <div class="header-container flex space-x-4 text-red-50 bg-gray-800">
+            <div>
+                <span>LOGO</span>
+            </div>
+            <div>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="main_banner flex flex-wrap content-center text-center justify-center">
+            <div class="">
+                <span class="text-6xl text-white font-semibold">Calcule aqui seu investimento!</span>
+                <p class="text-black font-medium mt-3">Nosso sistema simula um investimento composto</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="calc_form" class="calc flex justify-center">
+            <form id="calc_juros" method="POST">
+                <div class="mb-3">
+                    <h1 class="title text-black"></h1>
+                    <h2 class="title text-black text-4xl my-3 text-center">Simulador</h2>
+                    <label for="name" class="form_label text-black">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome aqui">
+                </div>
+                <div class="mb-3">
+                    <label for="monthly" class="form_label text-black">Mensalidade</label>
+                    <input type="number" name="monthly" id="monthly" placeholder="Valor da mensalidade.">
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form_label text-black">Tempo</label>
+                    <input type="number" id="time" name="time">
+                </div>
+                <div class="button_submite flex justify-center">
+                    <button class="btn btn-dark" type="submit" onclick="calculate(); return false">Simular</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="d-none" id="description_result">
+            <div class="container_result text-white flex justify-center">
+                <div>
+                    <p class="text-white font-medium text-4xl mt-6">Resultado:</p>
+                    <br>
+                    <div class="msg_result text-2xl font-light">
+                        <span>Ola </span><span id="name_result">...</span>
+                        <span>Juntando </span><span id="aporte">...</span> <span>todo mes, voce tera: </span><span
+                            id="result_value">...</span> <span>em</span> <span id="meses">...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-center d-none result mt-3" id="result">
+            <div class="col-6">
+                <div class="text-center text-white">
+                    <p class="text-break fs-1"> Olá <span class="nameresult">...</span> Juntando <span
+                            class="mensalidaderesult">...</span> por mês, você terá
+                        <span class="formula">...</span> em<span class="data">...</span>
+                    </p>
+                    <button type="submit" class="btn btn-primary mt-3" onclick="voltar(); return false;">Voltar</button>
+                </div> -->
+
+    </section>
+
+    <script type="text/javascript" src="script/calculate.js"></script>
+</body>
+
+</html>
+
+<!-- <label for="nota2" class="form-label">Nota 2º Bimestre</label>
+<input type="number" min="0" max="10" class="form-control" id="nota2" name="nota2"
+aria-describedby="emailHelp"> -->

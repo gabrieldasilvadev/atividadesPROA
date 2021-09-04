@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    color: #FF6A28;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h2 {
+    color: #FF6A28;
+    text-align: center;
+}
+
+hr { 
+    width: 60px;
+}
+
+/* ============+++==================================================================================== */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6A28;
+    padding: 10px;
+    height: 45px;
+}
+
+.container-header img{
+    padding-left: 100px;
+    position: absolute;
+}
+
+.container-header input {
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    top: 5px;
+    border-radius: 30px;
+    height: 30px;
+    width: 150px;
+    outline: 0;
+    border: o none;
+    box-shadow: 0 0 0 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #FF6A28;
+    margin: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 673px;
+    top: -78px;
+}
+
+
+
+.photo {
+    padding: 0 10px 100px;
+    margin: 0 0 50px 0;
+    background-color: #FFFFFF;
+}
+
+.img-right {
+    position: absolute;
+    right: 400px;
+    top: 123px;
+    width: 50px;
+    margin-top: 50px;
+}
+
+.photo h1 {
+    padding: 30px 0px 0;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.ingredientes {
+    padding: 0 0 100px;
+    margin: 0 0 50px 0;
+    background-color: #FFFFFF;
+}
+
+.modo-preparo {
+    padding: 0 0 100px;
+    margin: 0 0 50px 0;
+    background-color: #FFFFFF;
+}
