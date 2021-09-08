@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="_css/main.css">
+    <link rel="stylesheet" href="_css/tailwind.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- IMPORT JS -->
+    <script src="_assets/_lib/_js/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="_assets/_lib/_js/script.js" defer></script>
+    <title>Inspiracoes</title>
+</head>
+
+<body class="bg-gray-800 overflow-x-hidden">
+    <header>
+        <nav class="">
+            <div class="max-w-6xl mx-auto text-white">
+                <div class="flex justify-between mt-10">
+                    <a href="index.html"><span class="hover:text-yellow-600">logo</span></a>
+                    <div class="flex">
+                        <a href="aspectos.html"><span class="aspectos hover:text-yellow-600 cursor-pointer">Aspectos</span></a>
+                        <a href="inspiracoes.html"><span class="inspiracoes pl-10 hover:text-yellow-600 cursor-pointer">Inspirações</span></a>
+                        <a href="musicas.html"><span class="musicas pl-10 hover:text-yellow-600 cursor-pointer">Músicas</span></a>
+                    </div>
+                    <span>????</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Title -->
+        <div class="text-left text-white mx-24 mt-10">
+            <h1 class="text-7xl">Inspirações</h1>
+            <p class="text-yellow-600 text-3xl break-all mt-2">Pessoas que mais me inspiram</p>
+        </div>
+        <div>
+            <hr class="line mt-14 max-w-6xl mx-auto sm:mb-8 border-yellow-900">
+        </div>
+    </section>
+
+    <main>
+        <!-- Inspiracoes -->
+        <div class="grid place-items-center min-h-screen hidden" id="inspiracoes_content">
+            <div class="max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4 lg:gap-6">
+                <h1
+                    class="text-4xl font-extrabold xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5xl md:grid-cols-3 lg:text-6xl">
+                    <span class="md:col-span-2 text-yellow-500">Inspirações</span>
+                </h1>
+                <p
+                    class="text-white self-center xs:row-start-2 xs:col-start-2 xs:self-center md:col-start-1 md:col-span-2 md:pr-4 md:text-lg">
+                    Mark Elliot Zuckerberg (White Plains, 14 de maio de 1984) é um programador e empresário norte-americano, que ficou conhecido internacionalmente por ser um dos fundadores do Facebook, a rede social mais acessada do mundo.</p>
+                <a href="" class="bg-blue-500 xs:h-auto xs:square hover:opacity-60"><img src="_assets/_img/mark.jpg"
+                        class="mark "></img></a>
+
+                <a href="" class="bg-blue-500 xs:h-auto xs:square md:col-start-1 hover:opacity-60"><img
+                        src="_assets/_img/tyler.jpg" class="tyler"></img></a>
+                <p class="text-white self-center md:text-lg md:col-span-2 md:px-2">Tyler Robert Joseph (Columbus, 1 de dezembro de 1988) é um cantor, compositor, multi-instrumentista, produtor de discos e rapper norte-americano. Tyler é vocalista do duo musical Twenty One Pilots.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <section>
+        <div class="flex relative min-h-screen mt-14" id="welcome_inspiration">
+            <div
+                class="flex flex-col max-w-6xl max-h-96 mx-auto sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 bg-white">
+                <div class="sm:w-1/2 xl:w-3/5 h-full hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden  text-white bg-no-repeat bg-cover relative"
+                    style="background-image: url(https://images.unsplash.com/photo-1630841277787-47fcf069c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80);">
+                    <div class="absolute bg-gradient-to-b from-gray-800 to-gray-900 opacity-75 inset-0 z-0"></div>
+                    <div class="w-full  max-w-md z-10">
+                        <div class="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">PROA Institute</div>
+                        <div class="sm:text-sm xl:text-md text-gray-200 font-normal">Aqui mostro duas pessoas que eu
+                            admiro muito como profissionais, mas tambem como pessoa comum. </div>
+                    </div>
+                </div>
+                <div
+                    class="md:flex md:items-center md:justify-center w-full sm:w-auto md:h-full w-2/5 xl:w-2/5 p-8  md:p-10 lg:p-14 sm:rounded-lg md:rounded-none bg-white">
+                    <div class="max-w-md w-full space-y-8">
+                        <div class="text-center">
+                            <h2 class="mt-6 text-3xl font-bold text-gray-900">
+                                Bem-vindo
+                            </h2>
+                            <p class="mt-2 text-sm text-gray-500">Clique para liberar o conteudo!</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" onclick="hideAndShow(); return false;"
+                                class="py-3 px-6 text-white rounded-lg bg-gray-800 shadow-lg block md:inline-block hover:opacity-80">LIBERAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

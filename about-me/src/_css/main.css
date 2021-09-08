@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import '../bulma/css/bulma.css'; */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* overflow-y: hidden; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 10vh;
+}
+
+section #carousel_container{
+    height: 80vh;
+}
+
+.carousel img{
+    height: 65vh;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    opacity: 80%;
+}
+
+.card{
+    transition: 0.2s;
+}
+
+.mark,
+.tyler:hover{
+    cursor: pointer;
+}

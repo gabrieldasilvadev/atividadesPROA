@@ -15,7 +15,7 @@ function calculate() {
     document.getElementById("name_result").innerHTML = `${name},`;
     document.getElementById("aporte").innerHTML = `${pmt}R$`;
     document.getElementById("result_value").innerHTML = `${fv}R$`;
-    document.getElementById('meses').innerHTML = `${n} meses.`
+    document.getElementById('meses').innerHTML = `${n} meses.`;
     document.getElementById("description_result").classList.remove("d-none");
     document.getElementById("calc_form").classList.add("d-none");
 }
