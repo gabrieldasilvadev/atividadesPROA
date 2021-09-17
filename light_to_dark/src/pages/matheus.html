@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title> Bem vindo </title>
+  <style>
+    body {
+      background-color: var(--bg);
+
+    }
+
+    .papa {
+      margin-left: 200px;
+
+
+    }
+
+    .pape {
+      margin-left: 400px;
+      text-align: center;
+
+    }
+
+    .dark_mode:root {
+      --bg: #ffffff;
+      --text_color: #35363a;
+
+    }
+
+    :root {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      background: var(--bg);
+
+      --bg: #35363a;
+      --text_color: #ffffff;
+    }
+
+    .txt {
+      color: var(--text_color);
+
+
+    }
+  
+  </style>
+
+  <script>
+    
+    const $html = document.querySelector('html');
+    const $checkbox = document.querySelector('#switch');
+
+    $checkbox.addEventListener('change', function () {
+      $html.classList.toggle('dark_mode')
+    });
+
+
+
+
+    
+  </script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Matheus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="colapsu">
+    <main class="container d-flex justify-content-center my-2">
+      <div class="row ">
+        <div class="col-md-4">
+          <img class="papa" src="https://i.pinimg.com/originals/eb/56/99/eb569960907641cf72f52a48617746b5.jpg"
+            width="100px" alt="">
+        </div>
+        <div class="col-8">
+          <p class="txt"> árvore é de símbolo da vida, representando a perpétua evolução, sempre em ascensão vertical,
+            subindo em direção ao céu</p>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    </main>
+  </div>
+
+  <div>
+    <img
+      src="https://media.discordapp.net/attachments/878298886463176704/887346985374457906/unknown.png?width=585&height=595"
+      class="pape my-4" width="400px" alt="">
+    <h3 class="text-center txt">Matheus Augusto</h3>
+
+
+  </div>
+
+
+
+
+ <div class="">
+  <label for="switch">
+    <input type="checkbox" id="switch">
+    <p class="txt">ola</p>
+  </label>
+</div>
+</body>
+
+</html>

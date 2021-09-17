@@ -1,0 +1,133 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+
+    --bg: #FCFCFC;
+    --color-text: #000000;
+}
+
+
+.quote{
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 2em;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header{
+    background-image: url('../assets/img/banner_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: #FFFFFF;
+}
+
+.banner_title{
+    display: flex;
+    position: relative;
+    width: 50em;
+    top: 30vh;
+    margin-left: 2em;
+    font-size: 7.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    font-weight: 700;
+    font-size: 3.2em;
+    margin-top: 1em;
+    color: var(--color-text);
+}
+
+.container-toggle{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.toggle{
+    display: inline-block;
+    font-size: 2.4em;
+}
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background-color: gray;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label{
+    background-color: aquamarine;
+}
+
+input:checked + label::after{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.dark_toggle{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 2.4em;
+}
+
+.gabriel{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    place-items: center;
+
+}
+
+
+.gabriel_img img{
+    border-radius: 50%;
+    width: 20vw;
+    margin: 10em;
+    padding-left: 10em;
+}
+
+.descricao{
+    font-size: 3.2em;
+    justify-self: flex-start;
+    margin-left: 3em;
+    color: var(--color-text);
+}
