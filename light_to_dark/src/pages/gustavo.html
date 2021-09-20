@@ -8,38 +8,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icon-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <style>
-       img{
-           max-width: 100%;
-           height: 450px;
-       }
-       body.lightmode{
-        background-color:#DABDD6;
-        color: black;
+    <style>
+        img {
+            max-width: 100%;
+            height: 450px;
+        }
 
-       }
-       body.darkmode{
-           background-color: #44006B;
-           color: blanchedalmond;
-       }
-       .descript{
-           background-color: rgb(145, 211, 241);
-       }
-       .descript2{
-        background-color: rgb(7, 75, 153);
-        
+        body.lightmode {
+            background-color: #DABDD6;
+            color: black;
 
-       }
+        }
 
-      
-   </style>
-    
-    </head>
-    <body class="lightmode" id="modecolor">
+        body.darkmode {
+            background-color: #44006B;
+            color: blanchedalmond;
+        }
+
+        .descript {
+            background-color: rgb(145, 211, 241);
+        }
+
+        .descript2 {
+            background-color: rgb(7, 75, 153);
+
+
+        }
+    </style>
+
+</head>
+
+<body class="lightmode" id="modecolor">
     <header class="align-items-center align-items-middle mb-5 pb-3">
         <div class="container">
             <div class="row">
@@ -48,95 +51,113 @@
 
                 </div>
                 <div class="col-6 d-flex justify-content-center">
-                    <img src="img/gust.jpeg">
+                    <img src="../assets/img/img_gui/gust.jpeg">
 
                 </div>
             </div>
 
         </div>
         <div class="" id="default">
-        <div class="form-check form-switch fixed-top">
-            <input class="form-check-input" type="checkbox"  onclick="modoescuro(); return false ">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Modo Escuro</label>
-          </div>
+            <div class="form-check form-switch fixed-top">
+                <input class="form-check-input" type="checkbox" onclick="modoescuro(); return false ">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Modo Escuro</label>
+            </div>
         </div>
         <div class="d-none" id="cheked">
             <div class="form-check form-switch fixed-top">
-                <input class="form-check-input" type="checkbox" onclick="modoclaro();return false " id="flexSwitchCheckChecked" checked >
+                <input class="form-check-input" type="checkbox" onclick="modoclaro();return false "
+                    id="flexSwitchCheckChecked" checked>
                 <label class="form-check-label" for="flexSwitchCheckChecked">Modo Claro</label>
-              </div>
-          </div>
+            </div>
+        </div>
 
     </header>
-    
+
     <div class="container-fluid">
         <div>
             <h1 class="text-primary text-center mb-4" id="tcolor">
                 Coisas que eu Gosto:
             </h1>
         </div>
-    
-        <div class="row my-3">
-            
-            <div class="col-4">
-                <div class="descript" id="d1">
-                <p class="h4 p-3"> eu sempre gostei muito de musicas e me considero eclético ouço de tudo um pouco, mas hoje pra me representar escolhi Legião Urbana.</p>
-                </div>
-                <a href="https://www.youtube.com/channel/UC5K6XcVwZuLfYRGZaeBqSeQ" target="_blank"><img src="img/legião.jpg" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                <p class="h4 p-3">Séries são um ótimo passa-tempo pra matar o tédio ja assisti tantas que se usar todos os dedos que tenho não da pra contar.</p>
-                </div>
-                <a href="https://www.adorocinema.com/series/" target="_blank"><img src="img/friends.jpg" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3"> Aqui escolhi o meu gênero favorito de filmes, séries, animes, livros, etc... que é o drama e nada melhor pra representar do que Ano Hana.</p>
-                </div>
-                <a href="https://pt.wikipedia.org/wiki/Ano_Hi_Mita_Hana_no_Namae_o_Bokutachi_wa_Mada_Shiranai" target="_blank"><img src="img/AnoHana.jpg" ></a>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Animes têm uma grande importância na minha vida, e pra representar eles nada melhor que um dos meus favoritos One Piece.</p>
-                </div>
-                <a href="https://pt.wikipedia.org/wiki/One_Piece" target="_blank"><img src="img/op.jpg" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Quem na vida não gosta de ter bons amigos, e pra representalos aqui o Grupo 3 da equipe 1 meu grupo no qual pretendo desenvolver uma boa amizade.</p>
-                </div>
-                <a href="https://wakelet.com/wake/RFhcL7sii6MBnKySnoOMv" target="_blank"><img src="img/grupo3.jpg" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Desde os 10 anos de idade ja havia decidido que queria ser um desenvolverdor, se tornou meu objetivo profissional e graças ao Proa agora posso realizá-lo .</p>
-                </div>
-                <a href="https://www.proa.org.br/" target="_blank"><img src="img/prog.jpg" ></a>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Filmes fazem parte da minha vida, ja vi muitos filmes e ao pensar em filmes penso na minha familia, pois a maior parte dos filmes que ja vi foi com eles.</p>
-                </div>
-                <a href="https://pt.wikipedia.org/wiki/Vingadores" target="_blank"><img src="img/ving.png" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Desde criança sempre gostei de jogos, eu era uma criança que adorava desafios e os jogos me entregavam isso, e hoje em dia vivo quebrando a cabeça com lol.</p>
-                </div>
-                <a href="https://www.leagueoflegends.com/pt-br/" target="_blank"><img src="img/league.jpg" ></a>
-            </div>
-            <div class="col-4">
-                <div class="descript" id="d1">
-                    <p class="h4 p-3">Apesar de gostar muito de futebol e vôlei, Basquete é meu esporte favorito, jogar basquete pra mim é uma das melhores coisas do mundo.</p>
-                </div>
-                <a href="https://www.todamateria.com.br/basquetebol/" target="_blank"><img src="img/basq.jpg" ></a>
-        </div>
 
-    </div>
-    <script type="text/javascript" src="darkmode.js"></script>
-    </body>
+        <div class="row my-3">
+
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3"> eu sempre gostei muito de musicas e me considero eclético ouço de tudo um pouco,
+                        mas hoje pra me representar escolhi Legião Urbana.</p>
+                </div>
+                <a href="https://www.youtube.com/channel/UC5K6XcVwZuLfYRGZaeBqSeQ" target="_blank"><img
+                        src="../assets/img/img_gui/legião.jpg"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Séries são um ótimo passa-tempo pra matar o tédio ja assisti tantas que se usar
+                        todos os dedos que tenho não da pra contar.</p>
+                </div>
+                <a href="https://www.adorocinema.com/series/" target="_blank"><img
+                        src="../assets/img/img_gui/friends.jpg"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3"> Aqui escolhi o meu gênero favorito de filmes, séries, animes, livros, etc... que
+                        é o drama e nada melhor pra representar do que Ano Hana.</p>
+                </div>
+                <a href="https://pt.wikipedia.org/wiki/Ano_Hi_Mita_Hana_no_Namae_o_Bokutachi_wa_Mada_Shiranai"
+                    target="_blank"><img src="../assets/img/img_gui/AnoHana.jpg"></a>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Animes têm uma grande importância na minha vida, e pra representar eles nada
+                        melhor que um dos meus favoritos One Piece.</p>
+                </div>
+                <a href="https://pt.wikipedia.org/wiki/One_Piece" target="_blank"><img
+                        src="../assets/img/img_gui/op.jpg"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Quem na vida não gosta de ter bons amigos, e pra representalos aqui o Grupo 3 da
+                        equipe 1 meu grupo no qual pretendo desenvolver uma boa amizade.</p>
+                </div>
+                <a href="https://wakelet.com/wake/RFhcL7sii6MBnKySnoOMv" target="_blank"><img
+                        src="../assets/img/img_gui/grupo3.jpg"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Desde os 10 anos de idade ja havia decidido que queria ser um desenvolverdor, se
+                        tornou meu objetivo profissional e graças ao Proa agora posso realizá-lo .</p>
+                </div>
+                <a href="https://www.proa.org.br/" target="_blank"><img src="../assets/img/img_gui/prog.jpg"></a>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Filmes fazem parte da minha vida, ja vi muitos filmes e ao pensar em filmes penso
+                        na minha familia, pois a maior parte dos filmes que ja vi foi com eles.</p>
+                </div>
+                <a href="https://pt.wikipedia.org/wiki/Vingadores" target="_blank"><img
+                        src="../assets/img/img_gui/ving.png"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Desde criança sempre gostei de jogos, eu era uma criança que adorava desafios e os
+                        jogos me entregavam isso, e hoje em dia vivo quebrando a cabeça com lol.</p>
+                </div>
+                <a href="https://www.leagueoflegends.com/pt-br/" target="_blank"><img
+                        src="../assets/img/img_gui/ving.png"></a>
+            </div>
+            <div class="col-4">
+                <div class="descript" id="d1">
+                    <p class="h4 p-3">Apesar de gostar muito de futebol e vôlei, Basquete é meu esporte favorito, jogar
+                        basquete pra mim é uma das melhores coisas do mundo.</p>
+                </div>
+                <a href="https://www.todamateria.com.br/basquetebol/" target="_blank"><img
+                        src="../assets/img/img_gui/basq.jpg"></a>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="../js/darkmode.js"></script>
+</body>

@@ -4,21 +4,22 @@ html{
     overflow-x: hidden;;
     scroll-behavior: smooth;
     background-color: var(--bg);
+    transition:0.2s ease-in-out;
 
     --bg: #FCFCFC;
     --color-text: #000000;
+    --bg-quote: #FCFCFC;
+    --text-quote: #000000;
 }
 
-
 .quote{
-    background-color: #1E1E1E;
-    color: #FFFFFF;
+    background-color: var(--bg-quote);
+    color: var(--text-quote);
     font-size: 2em;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 header{

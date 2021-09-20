@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: none;
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #FFF965;
+  font-family: "Bebas Neue", cursive;
+}
+
+main {
+  top: -10em;
+  position: relative;
+}
+
+.title {
+  overflow-y: hidden;
+  font-size: 7.2rem;
+  height: 27vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title h1 {
+  color: #51423D;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 5em;
+}
+
+.container .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10em;
+}
+
+.container .btns .btn-one {
+  margin-right: 10em;
+  height: 50em;
+  width: 150em;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 10px;
+  color: #FFF965;
+  cursor: pointer;
+  background-color: #66514C;
+}
+
+.container .btns .btn-one:hover {
+  opacity: 90%;
+}
+
+.container .btns .btn-two {
+  height: 50em;
+  width: 150em;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 10px;
+  color: #FFF965;
+  cursor: pointer;
+  background-color: #51423D;
+}
+
+.container .btns .btn-two:hover {
+  opacity: 90%;
+}
+
+.container .btns .btn-title {
+  font-size: 2.4rem;
+}
+
+.container .img {
+  height: 40vh;
+  position: relative;
+  margin-top: 10em;
+}
+
+.stopwatch {
+  width: 100vw;
+  margin-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10em;
+}
+
+.stopwatch .time {
+  font-size: 7rem;
+  background-color: #51423D;
+  color: #FFF965;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

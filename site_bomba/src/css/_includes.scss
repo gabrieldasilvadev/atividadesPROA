@@ -1,0 +1,18 @@
+
+@mixin dFlexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin btnAdjust {
+    height: 50em;
+    width: 150em;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
+    color: $text-primary;
+    cursor: pointer;
+
+        &:hover{
+            opacity: 90%;
+        }
+}

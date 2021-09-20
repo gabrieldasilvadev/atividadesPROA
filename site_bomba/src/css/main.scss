@@ -1,0 +1,68 @@
+@import "variables";
+@import "includes";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: "Bebas Neue", cursive;
+}
+
+main {
+    bottom: 10em;
+    position: relative;
+}
+
+.title {
+    overflow-y: hidden;
+    font-size: 7.2rem;
+    height: 27vh;
+    width: 100vw;
+    @include dFlexCenter();
+    align-content: center;
+    flex-wrap: wrap;
+
+    h1 {
+        color: $color-title;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5em;
+
+    @import 'buttons';
+    
+    .img {
+        height: 40vh;
+        position: relative;
+        margin-top: 10em;
+    }
+}
+
+.stopwatch {
+    width: 100vw;
+    margin-bottom: 10em;
+    @include dFlexCenter() margin-top: 10em;
+
+    .time {
+        font-size: 7rem;
+        background-color: $color-title;
+        color: $text-primary;
+
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+}
